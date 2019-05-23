@@ -13,11 +13,9 @@ public class Main {
 
 
         long t = System.currentTimeMillis();
-        ParametersImpl parameters = new ParametersImpl(args);
 
         System.out.println(System.currentTimeMillis() - t);
-        System.out.println(parameters.getNamed().get("problem"));
-        Problem p = new Problem(new File(parameters.getNamed().get("problem")));
+        Problem p = new Problem(new File(args[0]));
         System.out.println(System.currentTimeMillis() - t);
 
         p.initialSolution();

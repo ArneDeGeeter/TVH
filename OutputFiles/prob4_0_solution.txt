@@ -1,0 +1,3 @@
+PROBLEM: prob4.txt
+DISTANCE: 0
+TRUCKS: 0

@@ -147,9 +147,11 @@ public class Problem {
 
     public void writeSolutionFile(String extra) throws IOException {
         int distance = bestSolution.stream().mapToInt(i -> i.calculateDistanceTraveled()).sum();
-
-        File f = new File("OutputFiles\\" + file.getName().substring(0, file.getName().length() - 4) + extra + "_" + distance + "_solution" + ".txt");
-        f.getParentFile().mkdirs();
+        String os = System.getProperty("os.name").toLowerCase();
+        String folderSeparator=os.contains("win")?"\\":"/";
+        new File("OutputFiles").mkdir();
+        File f = new File("OutputFiles"+folderSeparator + file.getName().substring(0, file.getName().length() - 4) + extra + "_" + distance + "_solution" + ".txt");
+      //  f.getParentFile().mkdirs();
         FileWriter fileWriter = new FileWriter(f);
         PrintWriter printWriter = new PrintWriter(fileWriter);
         printWriter.println("PROBLEM: " + file.getName());

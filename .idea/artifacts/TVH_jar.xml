@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TVH:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TVH_jar</output-path>
+    <root id="archive" name="TVH.jar">
+      <element id="module-output" name="TVH" />
+    </root>
+  </artifact>
+</component>
