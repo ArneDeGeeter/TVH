@@ -1,3 +1,0 @@
-PROBLEM: tvh_problem_3.txt
-DISTANCE: 0
-TRUCKS: 0
