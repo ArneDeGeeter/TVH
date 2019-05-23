@@ -204,7 +204,8 @@ public class Problem {
     public void optimize(int minutes) {
         //TODO: RANDOM SEED, static now for debugging
         Random rand = new Random();
-
+        String os = System.getProperty("os.name").toLowerCase();
+        String folderSeparator=os.contains("win")?"\\":"/";
 
         for (int i = 0; i < minutes * 3; i++) {
             Long time = System.currentTimeMillis();
@@ -215,7 +216,7 @@ public class Problem {
                 selectStep(rand.nextInt());
             }
             try {
-                this.writeSolutionFile("\\" + (i + 1) * 20 + "s");
+                this.writeSolutionFile(folderSeparator + (i + 1) * 20 + "s");
             } catch (IOException e) {
                 e.printStackTrace();
             }
