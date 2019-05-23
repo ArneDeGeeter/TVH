@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="TVH2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tvh-3.0-student.jar!/" />
+      <root url="jar://$PROJECT_DIR$/algorithm_maarten.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

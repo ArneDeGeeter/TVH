@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TVH1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/TVH_jar2/TVH.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
